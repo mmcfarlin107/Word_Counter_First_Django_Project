@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+ <h1> Word Total </h1>
+ <h2> Your Words Were: </h2>
+ <p> {{ fullText}} </p>
+<h3> You entered {{count}} words </h3>
+
+<p>
+    {% for word, totalCount in wordDictionary %}
+    {{ word }}
+    <br>
+    {{ totalCount }}
+    <br>
+    {% endfor %}
+</p>
+
+</body>
+</html>
